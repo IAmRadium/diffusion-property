@@ -1,5 +1,5 @@
 //Author: Md Rasid Ali, 
-//Reference paper: https://eprint.iacr.org/2015/873.pdf
+//Reference paper:https://eprint.iacr.org/2015/873.pdf
 
 #include<stdio.h>
 #define sbox_len 4
