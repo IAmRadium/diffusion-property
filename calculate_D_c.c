@@ -27,11 +27,17 @@ int main(){
 			values[i][j]=check(e_i,j);
 		}
 	}
+	printf("Printing the count matrix:\n\n");
+	int sum=0;	
 	for(int i=0;i<input_len;i++){
 		for(int j=0;j<output_len;j++){
 			printf("%d ",values[i][j]);
+			if(values[i][j]==0) sum++;
 		}
 		printf("\n");
 	}
+	float D_c=1-(double)sum/(input_len*output_len);
+	printf("\nRequired D_c= %f\n",D_c);
+	
 	return 0;
 }
